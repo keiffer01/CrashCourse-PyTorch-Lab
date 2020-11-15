@@ -9,7 +9,7 @@ from net import MyNet
 ### TODO: Play around with these for different effects on training!
 
 # Number of times to repeat the training loop.
-num_epoch = 50
+num_epoch = 10
 
 # How many images to feed into the network at a time. Lower is more accurate,
 # but much slower to train. Should not exceed 50000! (the size of the image set)
@@ -74,3 +74,4 @@ for epoch in range(num_epoch):
 
 # Save the trained neural network.
 torch.save(net.state_dict(), "./" + net_name + ".pth")
+print("Finished training! Saved model parameters in file " + net_name + ".pth")
