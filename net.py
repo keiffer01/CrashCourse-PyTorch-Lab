@@ -19,12 +19,13 @@ class MyNet(nn.Module):
             pooling layer applied after the Conv2d layer. A larger kernel size
             results in a smaller remapped image.
 
-        Some Activation functions:
+        Some activation functions:
         - nn.Sigmoid(): applies sigmoid activation function (maps to range (0, 1))
         - nn.ReLU(): applies Rectified Linear Unit function (maps to (0, max(input)))
+        - nn.Softmax(dim): applies softmax across the given dimension. Often
+                           dim=1 if applied after a linear layer!
         '''
         ### YOUR CODE HERE ###
-
 
 
     def forward(self, x):
