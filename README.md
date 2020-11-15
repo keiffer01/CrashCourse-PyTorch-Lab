@@ -17,7 +17,7 @@ Install PyTorch using the following Linux command:
 pip install torch torchvision
 ```
 
-If you are using a different environment that isn't Linux (or wish to install it via another method besides pip, such as Anaconda), then you can see specific instructions for your environment at: [https://www.cmu.edu/computing/services/endpoint/software/how-to/timeshare-unix.html](https://www.cmu.edu/computing/services/endpoint/software/how-to/timeshare-unix.html).
+If you are using a different environment that isn't Linux (or wish to install it via another method besides pip, such as Anaconda), then you can see specific instructions for your environment at: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/).
 
 Then, clone this repository by running:
 ```
