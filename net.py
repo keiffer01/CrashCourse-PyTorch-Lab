@@ -38,6 +38,7 @@ class MyNet(nn.Module):
     def forward(self, x):
         '''
         You will define the feedforward function here! Make use of the layers
-        and activation functions you definied in __init__.
+        and activation functions you definied in __init__, and feed x through
+        all of them. Return the transformed x.
         '''
         ### YOUR CODE HERE ###
