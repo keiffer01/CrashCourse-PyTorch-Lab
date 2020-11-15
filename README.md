@@ -1,4 +1,7 @@
 # CrashCourse PyTorch Lab
+
+If you need to refer back to the slides, they are located here: [https://docs.google.com/presentation/d/1UqHvkIh5REU9npXqDVKr_XfL3J9co4ZncijkVgJ2ND0/edit?usp=sharing](https://docs.google.com/presentation/d/1UqHvkIh5REU9npXqDVKr_XfL3J9co4ZncijkVgJ2ND0/edit?usp=sharing)
+
 NOTICE: Much of the code was derived from the "Training a Classifier" article from PyTorch's official documentation, located at [https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html#sphx-glr-beginner-blitz-cifar10-tutorial-py). The code was modified slightly for the purposes of this lab.
 
 You will be making your very own neural network to classify images from the CIFAR10 dataset, which consists of thousands of images categorized into 10 different classes, given below.
