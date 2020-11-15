@@ -24,6 +24,13 @@ class MyNet(nn.Module):
         - nn.ReLU(): applies Rectified Linear Unit function (maps to (0, max(input)))
         - nn.Softmax(dim): applies softmax across the given dimension. Often
                            dim=1 if applied after a linear layer!
+
+        Things to keep in mind:
+        - The MNIST dataset was in black and white, so only had 1 channel. The
+          CIFAR dataset is in RGB, so the input will have 3 channels.
+        - Since we're doing a classification problem with 10 classes, make sure
+          the final layer consists of a Linear layer with output 10, along with
+          a Softmax activation function
         '''
         ### YOUR CODE HERE ###
 
