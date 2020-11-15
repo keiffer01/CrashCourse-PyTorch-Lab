@@ -30,7 +30,7 @@ class MyNet(nn.Module):
           CIFAR dataset is in RGB, so the input will have 3 channels.
         - Since we're doing a classification problem with 10 classes, make sure
           the final layer consists of a Linear layer with output 10, along with
-          a Softmax activation function
+          a Softmax activation function.
         '''
         ### YOUR CODE HERE ###
 
@@ -40,5 +40,12 @@ class MyNet(nn.Module):
         You will define the feedforward function here! Make use of the layers
         and activation functions you definied in __init__, and feed x through
         all of them. Return the transformed x.
+
+        Things to keep in mind:
+        - If your first layer is a Kinear layer, make sure to flatten the input
+          first! Since each image is a 32x32 image with 3 channels, you can
+          do this with the function x.view(-1, 3 * 32 * 32).
+        - Anytime you got from a Convolutional layer to a Linear layer, make
+          sure to flatten the input to the Linear Layer first.
         '''
         ### YOUR CODE HERE ###
