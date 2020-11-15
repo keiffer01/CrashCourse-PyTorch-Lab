@@ -9,11 +9,11 @@ from net import MyNet
 ### TODO: Play around with these for different effects on training!
 
 # Number of times to repeat the training loop.
-num_epoch = 50
+num_epoch = 5
 
 # How many images to feed into the network at a time. Lower is more accurate,
 # but much slower to train. Should not exceed 50000! (the size of the image set)
-batch_size = 1000
+batch_size = 10000
 
 # How quickly you want the network to attempt to converge. Smaller values are
 # more accurate but much slower, while higher values can actually make the

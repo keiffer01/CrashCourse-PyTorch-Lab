@@ -32,6 +32,7 @@ class MyNet(nn.Module):
           the final layer consists of a Linear layer with output 10, along with
           a Softmax activation function.
         '''
+        super(MyNet, self).__init__()
         ### YOUR CODE HERE ###
 
 
@@ -42,7 +43,7 @@ class MyNet(nn.Module):
         all of them. Return the transformed x.
 
         Things to keep in mind:
-        - If your first layer is a Kinear layer, make sure to flatten the input
+        - If your first layer is a Linear layer, make sure to flatten the input
           first! Since each image is a 32x32 image with 3 channels, you can
           do this with the function x.view(-1, 3 * 32 * 32).
         - Anytime you got from a Convolutional layer to a Linear layer, make

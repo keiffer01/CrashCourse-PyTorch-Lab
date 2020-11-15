@@ -16,7 +16,7 @@ transform = transforms.Compose(
 # Load the testing dataset
 testset = torchvision.datasets.CIFAR10(root='./data', train=False,
                                        download=True, transform=transform)
-testloader = torch.utils.data.DataLoader(testset, batch_size=50000,
+testloader = torch.utils.data.DataLoader(testset, batch_size=10000,
                                          shuffle=False, num_workers=2)
 
 # Define the classes in the dataset
@@ -38,7 +38,8 @@ with torch.no_grad():
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
 
-print('Accuracy of the network: %d %%' % (100 * correct / total))
+print('Accuracy of the network on the 10000 test images: %d %%'
+      % (100 * correct / total))
 
 # Get accuracy for each class
 class_correct = list(0. for i in range(10))
@@ -49,7 +50,7 @@ with torch.no_grad():
         outputs = net(images)
         _, predicted = torch.max(outputs, 1)
         c = (predicted == labels).squeeze()
-        for i in range(4):
+        for i in range(10000):
             label = labels[i]
             class_correct[label] += c[i].item()
             class_total[label] += 1
