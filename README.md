@@ -6,7 +6,7 @@ NOTICE: Much of the code was derived from the "Training a Classifier" article fr
 
 You will be making your very own neural network to classify images from the CIFAR10 dataset, which consists of thousands of images categorized into 10 different classes, given below.
 
-![CIFAR10 Dataset](cifar10.png)
+![CIFAR10 Dataset](images/cifar10.png)
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ Open up the `net.py` file, where you will implement your neural network. You wil
 
 As a starting point, try creating the following neural network:
 
-![Starter Neural Network](starter_net.png)
+![Starter Neural Network](images/starter_net.png)
 
 In other words, an Artificial Neural Network with a single hidden layer of size 1000 with a ReLU activation function. Remember to reshape the input using `x.view(-1, 3*32*32)`!
 
@@ -59,6 +59,6 @@ python3 test.py
 
 An example neural network, called "bad_net", was trained on this dataset with the following accuracy statistics:
 
-![bad_net statistics](badnet_statistics.png)
+![bad_net statistics](images/badnet_statistics.png)
 
 Can you get your neural network to perform better??
